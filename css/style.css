@@ -68,45 +68,70 @@ body {
 
 
 .people-container {
-	background-color: var(--main-yellow);
+	
 	max-width: 100%;
+	max-height: 100vh;
 	display: grid;
-	background-color: red;
 	grid-template-columns: auto auto;
 	/*bottom:0;*/
 }
 
+.people-container:before {
+	content: '';
+	background-color: var(--main-yellow);
+	z-index: -1;
+	width: 60%;
+	margin-left: -12%;
+	height: 100%;
+	position: absolute;
+
+	-webkit-transform: skewX(5deg);
+  -moz-transform: skewX(5deg);
+  -ms-transform: skewX(5deg);
+  -o-transform: skewX(5deg);
+  transform: skewX(5deg);
+}
+
 .daniel {
 	max-height: 100%;
-	max-width: 50%;
+	width: 180%;
 	z-index: 100;
-	background-color: yellow;
-	bottom: 0;
-	/*position: fixed;*/
+	margin: auto auto 0 -40%;
 }
 
 .michal {
 	max-height: 100%;
-	max-width: 50%;
+	width: 150%;
 	z-index: 10;
-	margin-left: -10%;
+	margin: auto auto 0 -38%;
 	/*bottom: 0;*/
 	/*position: fixed;*/
 }
 
 
 .content-container {
-	width: 520px;
+	padding: 50px;
+	margin: auto auto auto auto;
+	max-width: 520px;
+	max-height: 100vh;
+}
+
+.logo{
+	max-width: 300px;
+	margin-right: 0;
+	margin-bottom: 35px;
+	/*background: red;*/
 }
 
 .header {
 	font-weight: bold;
-	margin-bottom: 35px;
+	line-height: 1.1;
+	margin-bottom: 30px;
 }
 
 .description {
 	font-size: 20px;
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 
 }
 
@@ -116,6 +141,26 @@ body {
 
 .description-small {
 	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+.form-button {
+	background-color: var(--main-yellow);
+	height: 45px;
+	width: 250px;
+	display: inline-block;
+}
+
+.form-button p {
+	font-size: 14px;
+	margin: 15px 15px;
+	display: inline-block;
+
+}
+
+.form-button img {
+	margin: 15px 15px;
+	display: inline-block;
 }
 
 input[type=text] {
