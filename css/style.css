@@ -94,18 +94,16 @@ body {
 
 .daniel {
 	max-height: 100%;
-	width: 180%;
+	max-width: 180%;
 	z-index: 100;
 	margin: auto auto 0 -40%;
 }
 
 .michal {
 	max-height: 100%;
-	width: 150%;
+	max-width: 150%;
 	z-index: 10;
 	margin: auto auto 0 -38%;
-	/*bottom: 0;*/
-	/*position: fixed;*/
 }
 
 
@@ -120,18 +118,17 @@ body {
 	max-width: 300px;
 	margin-right: 0;
 	margin-bottom: 35px;
-	/*background: red;*/
 }
 
 .header {
 	font-weight: bold;
 	line-height: 1.1;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 }
 
 .description {
 	font-size: 20px;
-	margin-bottom: 30px;
+	margin-bottom: 25px;
 
 }
 
@@ -149,18 +146,27 @@ body {
 	height: 45px;
 	width: 250px;
 	display: inline-block;
+	/*display: grid;*/
+	/*grid-template-columns: 60% 40%;*/
 }
 
 .form-button p {
+	/*display:inline-block;*/
 	font-size: 14px;
-	margin: 15px 15px;
-	display: inline-block;
+	justify-self: center;
+	align-self: center;
+	background-color: green;
+	/*width: 60%;*/
+	
 
 }
 
 .form-button img {
-	margin: 15px 15px;
-	display: inline-block;
+	display:block;
+	justify-self: center;
+	align-self: center;
+	background-color: red;
+
 }
 
 input[type=text] {
@@ -169,6 +175,14 @@ input[type=text] {
 	margin-bottom: 20px;
 	font-size:14px;
 	padding-left: 15px;
+	border-color: #666666;
+	box-shadow: none;
+}
+
+input[type=text]:focus {
+	border-color: var(--main-yellow);
+	outline: none;
+	box-shadow: none;
 }
 
 

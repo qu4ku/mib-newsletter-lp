@@ -10,6 +10,8 @@
 	<div class="wrapper">
 		<div class="people-container">
 			<img src="img/daniel.png" alt="daniel kot" class="daniel">
+			<!-- <img src="img/daniel-big.png" alt="daniel kot" class="daniel"> -->
+			<!-- <img src="img/michal-big.png" alt="michal bak" class="michal"> -->
 			<img src="img/michal.png" alt="michal bak" class="michal">
 		</div>
 		<div class="content-container">
@@ -19,10 +21,16 @@
 				<h1 class="header">Uwalniamy wiedzę z najciekawszych umysłów przemysłu technologicznego</h1>
 				<p class="description">Dołącz do naszego newslettera, by raz w tygodniu otrzymywać <span>praktyczne wskazówki przygotowane przez przedsiębiorców.</span></p>
 				<p class="description-small">Zdobywaj wiedzę od ekspertów z zakresu sprzedaży, marketingu i rozwoju biznesu, niedostępną nigdzie indziej.</p>
-				<form class="form" action="">
-					<input type="text" name="name" placeholder="Imię i Nazwisko">
-					<input type="text" name="email" placeholder="Email">
-					<div class="form-button" type="submit"><p>Zapisz się</p><img src="img/arrow.png" alt="button-arrow"></div>
+
+				<form class="form" method="post" action="https://app.freshmail.com/en/actions/subscribe/">
+					<input type="hidden" name="subscribers_list_hash" value="cmmykt4qvm" />
+					<input type="text" id="fm_imie" name="freshmail_custom_field[imie]" placeholder="Imię" />
+					<input type="text" id="freshmail_email" name="freshmail_email" placeholder="Email" /> 
+
+					<button class="form-button" type="submit" />
+						<p>Zapisz się</p>
+						<!-- <img src="img/arrow.png" alt="button-arrow" /> -->
+					</button>
 				</form>
 			</content>
 		</div>
