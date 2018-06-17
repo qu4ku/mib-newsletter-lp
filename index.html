@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl-PL">
 <head>
 	<meta charset="UTF-8">
+	<meta name="description" content="Cyfrowy magazyn o ecommerce, technologii i marketingu - Newsletter" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="x-apple-disable-message-reformatting" />
+
 	<title>Marketing i Biznes: Newsletter</title>
+
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
 </head>
 <body>
 	<div class="wrapper">
 		<div class="people-container">
-			<img src="img/daniel.png" alt="daniel kot" class="daniel">
-			<!-- <img src="img/daniel-big.png" alt="daniel kot" class="daniel"> -->
-			<!-- <img src="img/michal-big.png" alt="michal bak" class="michal"> -->
-			<img src="img/michal.png" alt="michal bak" class="michal">
+			<img src="img/daniel.png" id="daniel" alt="daniel kot" class="daniel">
+
+			<img src="img/michal.png" id="michal" alt="michal bak" class="michal">
 		</div>
 		<div class="content-container">
-			<img src="img/mib-logo.png" alt="marketing i biznes logo" class="logo">
+			<a href="https://marketingibiznes.pl/"><img src="img/mib-logo.png" alt="marketing i biznes logo" class="logo"></a>
 			<content>
 				
 				<h1 class="header">Uwalniamy wiedzę z najciekawszych umysłów przemysłu technologicznego</h1>
@@ -39,6 +44,29 @@
 			</content>
 		</div>
 	</div>
+
+	<script>
+		$(document).ready(function () {
+	    $('.wrapper').mousemove(function (e) {
+	        // parallax(e, this, 1);
+	        parallax(e, document.getElementById('daniel'), 2);
+	        parallax(e, document.getElementById('michal'), 4);
+	    });
+		});
+
+		function parallax(e, target, layer) {
+		    var layer_coeff = 10 / layer;
+		    var x = ($(window).width() - target.offsetWidth) / 2 - (e.pageX - ($(window).width() / 2)) / layer_coeff;
+		    var y = ($(window).height() - target.offsetHeight) / 2 - (e.pageY - ($(window).height() / 2)) / layer_coeff;
+
+		    // $(target).offset({ top: y ,left : x });
+		    
+		    var x = x / 10
+		    var y = y / 20
+		    $(target).css('transform', 'translate(' + x + 'px, ' + y + 'px)');
+		};
+
+	</script>
 	
 </body>
 </html>

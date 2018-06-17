@@ -73,7 +73,6 @@ body {
 	max-height: 100vh;
 	display: grid;
 	grid-template-columns: auto auto;
-	/*bottom:0;*/
 }
 
 .people-container:before {
@@ -96,14 +95,16 @@ body {
 	max-height: 100%;
 	max-width: 180%;
 	z-index: 100;
-	margin: auto auto 0 -40%;
+	margin: auto auto -10% -50%;
+	overflow: hidden;
 }
 
 .michal {
 	max-height: 100%;
 	max-width: 150%;
 	z-index: 10;
-	margin: auto auto 0 -38%;
+	margin: auto auto -10% -48%;
+	overflow: hidden;
 }
 
 
