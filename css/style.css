@@ -197,6 +197,7 @@ input[type=text] {
 	padding-left: 15px;
 	border-color: #666666;
 	box-shadow: none;
+	background-color: none;
 }
 
 input[type=text]:focus {
@@ -205,14 +206,58 @@ input[type=text]:focus {
 	box-shadow: none;
 }
 
+/*-------------------------------------------------------- small height */
 
+@media only screen and (max-height: 750px) {
+
+.content-container {
+	padding: 15px 50px 25px 50px;
+	margin: auto auto auto auto;
+	max-width: 520px;
+	max-height: 100vh;
+}
+
+.logo{
+	max-width: 300px;
+	margin-right: 0;
+	margin-bottom: 35px;
+}
+
+.header {
+	font-weight: bold;
+	line-height: 1.1;
+	font-size: 30px;
+	margin-bottom: 15px;
+}
+
+.description {
+	font-size: 16px;
+	margin-bottom: 15px;
+
+}
+
+.description span {
+	font-weight: bold;
+}
+
+.description-small {
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+
+}
 
 /*-------------------------------------------------------- mobile */
 
 @media only screen and (max-width: 600px) {
 
 .wrapper {
-	/*height: 100vh;*/
+	background-color: red;
+	background-image: url("../img/mobile-bg.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	
 	width: 100vw;
 	display: grid;
 	grid-template-columns: auto;
@@ -221,29 +266,10 @@ input[type=text]:focus {
 
 .people-container {
 	display: none;
-	
-	max-width: 100%;
-	/*max-height: 100vh;*/
-	/*display: grid;*/
-	/*grid-template-columns: auto auto;*/
-	/*bottom:0;*/
 }
 
 .people-container:before {
 	display: none;
-	content: '';
-	background-color: var(--main-yellow);
-	z-index: -1;
-	width: 60%;
-	margin-left: -40%;
-	height: 100%;
-	position: absolute;
-
-	-webkit-transform: skewX(5deg);
-  -moz-transform: skewX(5deg);
-  -ms-transform: skewX(5deg);
-  -o-transform: skewX(5deg);
-  transform: skewX(5deg);
 }
 
 .daniel {
@@ -257,9 +283,7 @@ input[type=text]:focus {
 
 
 .content-container {
-	/*max-width: 100%;*/
-	padding: auto 20px auto 20px;
-	/*padding: 0;/*/
+	padding: auto 0 auto 0;
 	text-align: center;
 }
 
@@ -338,14 +362,9 @@ button {
 input[type=text] {
 	height: 45px;
 	max-width: 320px;
-	/*width: unset;*/
 	width: 100%;
-	/*width: none;*/
-	margin-bottom: 20px;
-	font-size:14px;
-	padding-left: 15px;
-	border-color: #666666;
-	box-shadow: none;
+	background: transparent;
+	margin-left: -10px;
 }
 
 input[type=text]:focus {
@@ -353,8 +372,6 @@ input[type=text]:focus {
 	outline: none;
 	box-shadow: none;
 }
-
-
 
 }
 
