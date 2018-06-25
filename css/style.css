@@ -23,7 +23,7 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
+	/*font: inherit;*/
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
@@ -192,7 +192,7 @@ button:hover {
 input[type=text] {
 	height: 45px;
 	width: 320px;
-	margin-bottom: 20px;
+	margin-bottom: 10px;
 	font-size:14px;
 	padding-left: 15px;
 	border-color: #666666;
@@ -204,6 +204,26 @@ input[type=text]:focus {
 	border-color: var(--main-yellow);
 	outline: none;
 	box-shadow: none;
+}
+
+/*input[type="checkbox"]:required:invalid + label { 
+	color: red; 
+}
+
+input[type="checkbox"]:required:valid + label { 
+	color: black; 
+}*/
+
+
+.check {
+	font-size: 12px;
+	line-height: 14px;
+	margin-bottom: 10px;
+}
+
+input[type="checkbox"] + label {
+	
+	/*line-height: 0px;*/
 }
 
 /*-------------------------------------------------------- small height */
@@ -252,7 +272,6 @@ input[type=text]:focus {
 @media only screen and (max-width: 600px) {
 
 .wrapper {
-	background-color: red;
 	background-image: url("../img/mobile-bg.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
