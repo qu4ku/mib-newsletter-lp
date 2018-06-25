@@ -206,14 +206,6 @@ input[type=text]:focus {
 	box-shadow: none;
 }
 
-/*input[type="checkbox"]:required:invalid + label { 
-	color: red; 
-}
-
-input[type="checkbox"]:required:valid + label { 
-	color: black; 
-}*/
-
 
 .check {
 	font-size: 12px;
@@ -221,17 +213,13 @@ input[type="checkbox"]:required:valid + label {
 	margin-bottom: 10px;
 }
 
-input[type="checkbox"] + label {
-	
-	/*line-height: 0px;*/
-}
 
 /*-------------------------------------------------------- small height */
 
 @media only screen and (max-height: 750px) {
 
 .content-container {
-	padding: 15px 50px 25px 50px;
+	padding: 15px 30px 25px 30px;
 	margin: auto auto auto auto;
 	max-width: 520px;
 	max-height: 100vh;
@@ -240,7 +228,7 @@ input[type="checkbox"] + label {
 .logo{
 	max-width: 300px;
 	margin-right: 0;
-	margin-bottom: 35px;
+	margin-bottom: 25px;
 }
 
 .header {
